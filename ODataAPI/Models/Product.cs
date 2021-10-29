@@ -1,4 +1,6 @@
-﻿namespace ODataAPI.Models
+﻿using System.Collections.Generic;
+
+namespace ODataAPI.Models
 {
     public class Product
     {
@@ -7,7 +9,7 @@
         public string Description { get; set; }
         public string Slug { get; set; }
         public string Category { get; set; }
-
+        public List<ProductReview> Reviews { get; set; }
     }
 
     
