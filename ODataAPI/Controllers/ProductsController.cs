@@ -7,8 +7,8 @@ using ODataAPI.Models;
 
 namespace ODataAPI.Controllers
 {
-    [Route("api/v1/[controller]/")]
-    public class ProductsController : Controller
+   // [Route("api/v1/[controller]/")]
+    public class ProductsController : ODataController
     {
         private List<Product> products = new List<Product>()
         {
