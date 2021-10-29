@@ -1,8 +1,6 @@
 ﻿using ODataAPI.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ODataAPI.Data
 {
@@ -40,7 +38,7 @@ namespace ODataAPI.Data
             {
                 new ProductReview()
                 {
-                    Id = 1,
+                    Id = 2,
                     CreatedOn = DateTime.Now,
                     Description = "this is a good product",
                     EmailId = "test@test.com",
@@ -61,7 +59,7 @@ namespace ODataAPI.Data
             {
                 new ProductReview()
                 {
-                    Id = 1,
+                    Id = 3,
                     CreatedOn = DateTime.Now,
                     Description = "this is a good product",
                     EmailId = "test@test.com",
