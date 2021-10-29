@@ -22,7 +22,7 @@ namespace ODataAPI.Data
                     Description = "this is a good product",
                     EmailId = "test@test.com",
                     Title = "ok ok",
-                    Product = p1
+                    //Product = p1
                 }
             }
         };
@@ -43,7 +43,7 @@ namespace ODataAPI.Data
                     Description = "this is a good product",
                     EmailId = "test@test.com",
                     Title = "ok ok",
-                    Product = p1
+                    // Product = p1
                 }
             }
 
@@ -64,7 +64,7 @@ namespace ODataAPI.Data
                     Description = "this is a good product",
                     EmailId = "test@test.com",
                     Title = "ok ok",
-                    Product = p1
+                    //Product = p1
                 }
             }
 
