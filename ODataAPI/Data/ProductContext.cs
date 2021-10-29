@@ -30,7 +30,35 @@ namespace ODataAPI.Data
         {
             return Products.Local.ToList<Product>().SelectMany(s => s.Reviews).ToList();
         }
-    
+
+
+        public Product AddProduct(Product product)
+        {
+            Products.Add(product);
+            return product;
+        }
+
+        public void UpdateProduct(Product product, int Id)
+        {
+            Products.Update(product);
+        }
+
+        public bool ArchiveProduct(int Id)
+        {
+            var product = GetProduct(Id);
+            if(product != null)
+            {
+                Products.Remove(product);
+                return true;
+            }
+
+            return false;
+        }
+
+        public Product GetProduct(int Id)
+        {
+            return Products.Local.Where(s => s.Id == Id).FirstOrDefault();
+        }
 
 
     }
